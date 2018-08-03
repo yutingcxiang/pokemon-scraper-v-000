@@ -13,7 +13,8 @@ class Pokemon
   end
   
   def self.find(id, db)
-    array = db.execute("SELECT * FROM pokemon WHERE id = (?)", id)
+    result = db.execute("SELECT * FROM pokemon WHERE id = (?)", id)
+    array = result.split(", ")
     pkmn = {
       :id => array[0],
       :name => array[1],
