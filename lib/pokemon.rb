@@ -16,7 +16,8 @@ class Pokemon
     array = db.execute("SELECT * FROM pokemon WHERE id = (?)", id)
     pkmn = {}
     pkmn << {
-      
+      id => array[1]
+      name =>
     }
   end
 end
