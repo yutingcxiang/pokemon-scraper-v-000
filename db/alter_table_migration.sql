@@ -1,1 +1,2 @@
-ALTER TABLE add 
+ALTER TABLE pokemon
+ADD 
