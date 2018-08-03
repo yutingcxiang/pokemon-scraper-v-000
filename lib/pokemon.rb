@@ -7,7 +7,8 @@ class Pokemon
     @db = db
   end
   
-  def save
+  def self.save(name, type, db)
+    database_connection.execute("INSERT INTO cats (name, breed, age) VALUES (?, ?, ?)",name, breed, age)
   end
   
   def find
