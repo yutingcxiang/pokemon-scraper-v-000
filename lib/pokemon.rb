@@ -19,6 +19,5 @@ class Pokemon
       :name => array[1],
       :type => array[2]
     }
- 
   end
 end
