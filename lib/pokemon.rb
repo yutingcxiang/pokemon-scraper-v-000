@@ -14,10 +14,11 @@ class Pokemon
   
   def self.find(id, db)
     array = db.execute("SELECT * FROM pokemon WHERE id = (?)", id)
-    pkmn = {}
-    pkmn << {
-      id => array[1]
-      name =>
+    pkmn = {
+      :id => array[0],
+      :name => array[1],
+      :type => array[2]
     }
+ 
   end
 end
