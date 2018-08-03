@@ -1,4 +1,3 @@
 class Pokemon
-  
-  def initialize
+  def initialize(name:)
 end
