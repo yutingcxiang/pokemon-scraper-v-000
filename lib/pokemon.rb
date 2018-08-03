@@ -17,4 +17,7 @@ class Pokemon
     result = db.execute("SELECT * FROM pokemon WHERE id = (?)", id)
     Pokemon.new(id: result[0][0], name: result[0][1], type: result[0][2], db: db)
   end
+  
+  def alter_hp
+  end
 end
