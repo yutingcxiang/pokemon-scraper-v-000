@@ -13,6 +13,6 @@ class Pokemon
   end
   
   def find
-    
+    db.execute("SELECT * FROM pokemon WHERE id = ")
   end
 end
